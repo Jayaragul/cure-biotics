@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital AI Website</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3498db;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 20px auto;
+    }
+
+    .box {
+      background-color: #cdd6bb;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      flex: 1 1 300px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: #000102;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    CURE BIOTICS
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="box" id="patientDetails" onclick="handleButtonClick('patientDetails')">
+      <h2>Patient Details</h2>
+      <!-- Add patient details content here -->
+    </div>
+    <div class="box" id="bills" onclick="handleButtonClick('bills')">
+      <h2>Bills</h2>
+      <!-- Add bills content here -->
+    </div>
+    <div class="box" id="scanReport" onclick="handleButtonClick('scanReport')">
+      <h2>Scan Report</h2>
+      <!-- Add scan report content here -->
+    </div>
+    <div class="box" id="ai" onclick="handleButtonClick('ai')">
+      <h2>AI</h2>
+      <!-- Add AI content here -->
+    </div>
+  </div>
+
+  <!-- Add your JavaScript code here if needed -->
+  <script>
+    function handleButtonClick(boxId) {
+      // Handle button click for each box
+      console.log(`Button clicked: ${boxId}`);
+    }
+  </script>
+</body>
+</html>

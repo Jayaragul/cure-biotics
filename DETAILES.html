@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .patient-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .patient-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .patient-info {
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .patient-footer {
+            padding: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #3498db;
+        }
+
+        button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="patient-container">
+        <div class="patient-header">
+            <span class="profile-pic"></span>
+            <button>Edit</button>
+        </div>
+        <div class="patient-info">
+            <h2>Patient Name</h2>
+            <p>Age: 30</p>
+            <p>Sex: Male</p>
+            <p>Weight: 75 kg</p>
+        </div>
+        <div class="patient-footer">
+            <div class="actions">
+                <button>Like</button>
+                <button>Comment</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
